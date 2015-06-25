@@ -1,0 +1,82 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "output_folder" : "./reports",
+  "custom_commands_path" : "./custom-commands",
+  "custom_assertions_path" : "",
+  "globals_path" : "globals.js",
+  "page_objects_path" : "",
+  "globals_path" : "",
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "bin/selenium-server-standalone-2.43.1.jar",
+    "log_path" : "./logs",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "bin/chromedriver_v2_14_313457",
+      "webdriver.ie.driver" : "",
+      "webdriver.firefox.profile" : ""
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "chrome" : {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    }
+  }
+}
+
+
+
+"test_settings" : {
+
+
+  "default" : {
+    "launch_url" : "${LAUNCHURL}",
+    "silent": false,
+
+
+    "selenium_host" : "hub.browserstack.com",
+    "selenium_port" : 80,
+    "selenium" : { "start_process" : false  },
+
+    "disable_colors": false,
+    "screenshots": {
+      "enabled" : false,
+      "path" : ""
+    },
+
+    "desiredCapabilities" :{
+      "project" : "MooseReapers",
+      "build" : "${BID}",
+      "name" : "rallyInternal",
+      "resolution" : "1280x1024",
+      "launch_url" : "${LAUNCHURL}",
+      "browserstack.local" : true,
+      "browserstack.debug" : false,
+      "browserstack.user" : "jeffmanhart1",
+      "browserstack.key" : "gsQvbQVReZqgB8gnVuNj",
+      "acceptSslCerts" : true
+    }

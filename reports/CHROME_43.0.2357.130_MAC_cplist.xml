@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="cplist"
+    errors="0" failures="0" hostname="" id="" package="cplist" skipped="0"
+    tests="1" time="30.30" timestamp="Thu, 25 Jun 2015 19:36:46 GMT">
+  
+    <testcase name="OpenCapacityPlanningList" time="30.30" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

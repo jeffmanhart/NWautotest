@@ -1,0 +1,46 @@
+12:36:51.950 INFO - Launching a standalone server
+12:36:51.987 INFO - Java: Oracle Corporation 25.45-b02
+12:36:51.987 INFO - OS: Mac OS X 10.10.3 x86_64
+12:36:51.997 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+12:36:52.076 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match with current platform: MAC
+12:36:52.108 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+12:36:52.109 INFO - Version Jetty/5.1.x
+12:36:52.110 INFO - Started HttpContext[/selenium-server,/selenium-server]
+12:36:52.132 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@d7b1517
+12:36:52.132 INFO - Started HttpContext[/wd,/wd]
+12:36:52.132 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+12:36:52.132 INFO - Started HttpContext[/,/]
+12:36:52.136 INFO - Started SocketListener on 0.0.0.0:4444
+12:36:52.137 INFO - Started org.openqa.jetty.jetty.Server@7cd84586
+12:36:52.349 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Mrps, browserName=firefox, javascriptEnabled=true, platform=ANY}]])
+12:36:52.358 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Mrps, browserName=firefox, javascriptEnabled=true, platform=ANY}]
+12:36:55.605 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Mrps, browserName=firefox, javascriptEnabled=true, platform=ANY}]]
+12:36:55.620 INFO - Executing: [get: http://localhost#/slm/login.op])
+12:36:55.753 INFO - Done: [get: http://localhost#/slm/login.op]
+12:36:56.262 INFO - Executing: [take screenshot])
+12:36:56.345 INFO - Done: [take screenshot]
+12:36:56.358 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:36:56.387 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:36:56.895 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:36:56.905 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:36:57.412 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:36:57.419 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:36:57.928 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:36:57.941 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:36:58.448 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:36:58.461 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:36:58.969 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:36:58.982 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:36:59.490 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:36:59.498 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:37:00.006 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:37:00.014 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:37:00.523 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:37:00.537 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:37:01.044 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:37:01.057 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:37:01.562 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+12:37:01.576 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+12:37:01.581 INFO - Executing: [delete session: 1bbae62f-842f-4d9f-ac2a-0b75784cb598])
+12:37:01.686 INFO - Done: [delete session: 1bbae62f-842f-4d9f-ac2a-0b75784cb598]
+12:37:01.716 INFO - Shutting down...

@@ -1,0 +1,129 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "output_folder" : "./reports",
+  "custom_commands_path" : "./custom-commands",
+  "custom_assertions_path" : "",
+  "globals_path" : "globals.js",
+  "live_output" : false,
+  "parallel_process_delay" : 25,
+  "disable_colors": false,
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "bin/selenium-server-standalone-2.45.0.jar",
+    "log_path" : "./logs",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "bin/chromedriver_v2_14_313457",
+      "webdriver.ie.driver" : "",
+      "webdriver.firefox.profile" : ""
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+          "launch_url" : "${LAUNCHURL}",
+          "silent": false,
+
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "project" : "MooseReapers",
+        "build" : "${BID}",
+        "name" : "rallyInternal",
+        "resolution" : "1280x1024",
+        "launch_url" : "${LAUNCHURL}",
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "chrome" : {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+
+
+    },
+
+    "local" : {
+      "selenium_host" : "127.0.0.1",
+      "selenium_port" : 4444,
+      "selenium": { "start_process" : true},
+      "silent": true,
+
+
+      "desiredCapabilities" : {
+        "browserName" : "chrome",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true
+      }
+    },
+
+    "browserstack" : {
+      "silent": true,
+      "selenium" : { "start_process" : false  },
+      "selenium_host" : "hub.browserstack.com",
+      "selenium_port" : 80,
+
+      "disable_colors": false,
+      "screenshots": {
+        "enabled" : false,
+        "path" : ""
+      },
+
+      "desiredCapabilities": {
+        "project" : "MooseReapers",
+        "name" : "rallyInternal",
+        "resolution" : "1280x1024",
+        "browserstack.local" : true,
+        "browserstack.debug" : false,
+        "browserstack.user" : "${BROSTK_USERNAME}",
+        "browserstack.key" : "${BROSTK_ACCESS_KEY}",
+        "acceptSslCerts" : true
+      }
+    },
+
+  "saucelabs" : {
+      "selenium_host" : "ondemand.saucelabs.com",
+      "selenium_port" : 80,
+      "username" : "${SAUCE_USERNAME}",
+      "access_key" : "${SAUCE_ACCESS_KEY}",
+      "use_ssl" : false,
+      "silent" : true,
+      "output" : true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "name" : "test-example",
+        "browserName": "firefox"
+      },
+      "globals" : {
+        "myGlobal" : "some_sauce_global"
+      },
+
+      "selenium" : {  "start_process" : false  }
+    },
+
+    "phantomjs" : {
+      "desiredCapabilities" : {
+        "browserName" : "phantomjs",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "phantomjs.binary.path" : "node_modules/phantomjs/bin/phantomjs"
+      }
+    }
+  }
+}
