@@ -1,245 +1,101 @@
-13:36:45.934 INFO - Launching a standalone server
+13:23:12.866 INFO - Launching a standalone server
 Setting system property webdriver.chrome.driver to bin/chromedriver_v2_14_313457
-13:36:45.973 INFO - Java: Oracle Corporation 25.45-b02
-13:36:45.973 INFO - OS: Mac OS X 10.10.3 x86_64
-13:36:45.982 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
-13:36:46.066 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match with current platform: MAC
-13:36:46.096 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-13:36:46.097 INFO - Version Jetty/5.1.x
-13:36:46.098 INFO - Started HttpContext[/selenium-server,/selenium-server]
-13:36:46.125 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@d7b1517
-13:36:46.126 INFO - Started HttpContext[/wd,/wd]
-13:36:46.126 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-13:36:46.126 INFO - Started HttpContext[/,/]
-13:36:46.130 INFO - Started SocketListener on 0.0.0.0:4444
-13:36:46.130 INFO - Started org.openqa.jetty.jetty.Server@7cd84586
-13:36:46.347 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, launch_url=https://eljeffe.testn.f4tech.com, build=${BID}, name=Cplist, browserName=chrome, project=MooseReapers, javascriptEnabled=true, resolution=1280x1024, platform=ANY}]])
-13:36:46.356 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, launch_url=https://eljeffe.testn.f4tech.com, build=${BID}, name=Cplist, browserName=chrome, project=MooseReapers, javascriptEnabled=true, resolution=1280x1024, platform=ANY}]
-Starting ChromeDriver 2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf) on port 16750
+13:23:12.920 INFO - Java: Oracle Corporation 25.45-b02
+13:23:12.920 INFO - OS: Mac OS X 10.10.3 x86_64
+13:23:12.933 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+13:23:13.021 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match with current platform: MAC
+13:23:13.052 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+13:23:13.053 INFO - Version Jetty/5.1.x
+13:23:13.054 INFO - Started HttpContext[/selenium-server,/selenium-server]
+13:23:13.106 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@d7b1517
+13:23:13.106 INFO - Started HttpContext[/wd,/wd]
+13:23:13.106 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+13:23:13.106 INFO - Started HttpContext[/,/]
+13:23:13.112 INFO - Started SocketListener on 0.0.0.0:4444
+13:23:13.112 INFO - Started org.openqa.jetty.jetty.Server@7cd84586
+13:23:13.342 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, launch_url=https://blankslate.testn.f4tech.com, build=${BID}, name=Create Custom Page, browserName=chrome, project=MooseReapers, javascriptEnabled=true, resolution=1280x1024, platform=ANY}]])
+13:23:13.355 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, launch_url=https://blankslate.testn.f4tech.com, build=${BID}, name=Create Custom Page, browserName=chrome, project=MooseReapers, javascriptEnabled=true, resolution=1280x1024, platform=ANY}]
+Starting ChromeDriver 2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf) on port 14835
 Only local connections are allowed.
-13:36:48.004 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, launch_url=https://eljeffe.testn.f4tech.com, build=${BID}, name=Cplist, browserName=chrome, project=MooseReapers, javascriptEnabled=true, resolution=1280x1024, platform=ANY}]]
-13:36:48.019 INFO - Executing: [maximise window])
-13:36:48.831 INFO - Done: [maximise window]
-13:36:48.837 INFO - Executing: [get: https://eljeffe.testn.f4tech.com#/slm/login.op])
-13:36:52.304 INFO - Done: [get: https://eljeffe.testn.f4tech.com#/slm/login.op]
-13:36:52.812 INFO - Executing: [take screenshot])
-13:36:53.341 INFO - Done: [take screenshot]
-13:36:53.453 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
-13:36:53.485 INFO - Done: [find elements: By.cssSelector: h1.login-header]
-13:36:53.489 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: h1.login-header]])
-13:36:53.502 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: h1.login-header]]
-13:36:53.508 INFO - Executing: [find element: By.cssSelector: h1.login-header])
-13:36:53.521 INFO - Done: [find element: By.cssSelector: h1.login-header]
-13:36:53.524 INFO - Executing: [get text: 0 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: h1.login-header]])
-13:36:53.541 INFO - Done: [get text: 0 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: h1.login-header]]
-13:36:53.545 INFO - Executing: [find element: By.cssSelector: #j_username])
-13:36:53.559 INFO - Done: [find element: By.cssSelector: #j_username]
-13:36:53.563 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #j_username], [j, m, a, n, h, a, r, t, @, r, a, l, l, y, d, e, v, ., c, o, m]])
-13:36:53.649 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #j_username], [j, m, a, n, h, a, r, t, @, r, a, l, l, y, d, e, v, ., c, o, m]]
-13:36:53.654 INFO - Executing: [find element: By.cssSelector: #j_password])
-13:36:53.667 INFO - Done: [find element: By.cssSelector: #j_password]
-13:36:53.671 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #j_password], [P, a, s, s, w, o, r, d]])
-13:36:53.723 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #j_password], [P, a, s, s, w, o, r, d]]
-13:36:53.726 INFO - Executing: [find element: By.cssSelector: #login-button])
-13:36:53.739 INFO - Done: [find element: By.cssSelector: #login-button]
-13:36:53.742 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #login-button]])
-13:36:56.343 INFO - Done: [click: 3 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #login-button]]
-13:36:56.349 INFO - Executing: [find elements: By.cssSelector: span[class='title']])
-13:36:56.366 INFO - Done: [find elements: By.cssSelector: span[class='title']]
-13:36:56.873 INFO - Executing: [find elements: By.cssSelector: span[class='title']])
-13:36:57.014 INFO - Done: [find elements: By.cssSelector: span[class='title']]
-13:36:57.523 INFO - Executing: [find elements: By.cssSelector: span[class='title']])
-13:37:02.260 INFO - Done: [find elements: By.cssSelector: span[class='title']]
-13:37:02.264 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: span[class='title']]])
-13:37:02.278 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: span[class='title']]]
-13:37:02.282 INFO - Executing: [find element: By.cssSelector: span.title])
-13:37:02.296 INFO - Done: [find element: By.cssSelector: span.title]
-13:37:02.299 INFO - Executing: [get text: 4 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: span[class='title']]])
-13:37:02.315 INFO - Done: [get text: 4 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: span[class='title']]]
-13:37:02.320 INFO - Executing: [get: https://eljeffe.testn.f4tech.com#/23112780161ud/capacityplanning])
-13:37:02.343 INFO - Done: [get: https://eljeffe.testn.f4tech.com#/23112780161ud/capacityplanning]
-13:37:02.348 INFO - Executing: [find elements: By.xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]])
-13:37:02.363 INFO - Done: [find elements: By.xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]]
-13:37:02.872 INFO - Executing: [find elements: By.xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]])
-13:37:03.008 INFO - Done: [find elements: By.xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]]
-13:37:03.012 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]]])
-13:37:03.024 INFO - Done: [is displayed: 5 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]]]
-13:37:03.028 INFO - Executing: [find element: By.xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]])
-13:37:03.041 INFO - Done: [find element: By.xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]]
-13:37:03.043 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]]])
-13:37:03.060 INFO - Done: [get text: 5 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]]]
-13:37:03.064 INFO - Executing: [find element: By.cssSelector: #content > div > div.smb-AddNew > button])
-13:37:03.079 INFO - Done: [find element: By.cssSelector: #content > div > div.smb-AddNew > button]
-13:37:03.083 INFO - Executing: [get element attribute: 6 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #content > div > div.smb-AddNew > button], disabled])
-13:37:03.203 INFO - Done: [get element attribute: 6 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #content > div > div.smb-AddNew > button], disabled]
-13:37:03.207 INFO - Executing: [find element: By.xpath: //*[@id='content']/div/div[2]/div/div/input])
-13:37:03.220 INFO - Done: [find element: By.xpath: //*[@id='content']/div/div[2]/div/div/input]
-13:37:03.223 INFO - Executing: [send keys: 7 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[2]/div/div/input], [T, e, s, t,  , P, l, a, n,  , 1]])
-13:37:03.358 INFO - Done: [send keys: 7 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[2]/div/div/input], [T, e, s, t,  , P, l, a, n,  , 1]]
-13:37:03.362 INFO - Executing: [find element: By.cssSelector: #content > div > div.smb-AddNew > button])
-13:37:03.375 INFO - Done: [find element: By.cssSelector: #content > div > div.smb-AddNew > button]
-13:37:03.378 INFO - Executing: [get element attribute: 6 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #content > div > div.smb-AddNew > button], class])
-13:37:03.386 INFO - Done: [get element attribute: 6 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> css selector: #content > div > div.smb-AddNew > button], class]
-13:37:03.390 INFO - Executing: [find element: By.xpath: //*[@id='content']/div/div[2]/button/span])
-13:37:03.404 INFO - Done: [find element: By.xpath: //*[@id='content']/div/div[2]/button/span]
-13:37:03.407 INFO - Executing: [click: 8 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[2]/button/span]])
-13:37:03.454 INFO - Done: [click: 8 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[2]/button/span]]
-13:37:03.457 INFO - Executing: [find element: By.xpath: //*[@id='content']/div/div[2]/div/div/input])
-13:37:03.470 INFO - Done: [find element: By.xpath: //*[@id='content']/div/div[2]/div/div/input]
-13:37:03.473 INFO - Executing: [send keys: 7 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[2]/div/div/input], [n, i, g, h, t, w, a, t, c, h, ]])
-13:37:03.590 INFO - Done: [send keys: 7 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[2]/div/div/input], [n, i, g, h, t, w, a, t, c, h, ]]
-13:37:03.593 INFO - Executing: [find element: By.xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span])
-13:37:03.607 INFO - Done: [find element: By.xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span]
-13:37:03.610 INFO - Executing: [click: 9 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span]])
-13:37:03.659 INFO - Done: [click: 9 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span]]
-13:37:03.662 INFO - Executing: [find element: By.xpath: //*[@id='2-select-item-0']/span[1]])
-13:37:03.736 INFO - Done: [find element: By.xpath: //*[@id='2-select-item-0']/span[1]]
-13:37:03.739 INFO - Executing: [click: 10 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='2-select-item-0']/span[1]]])
-13:37:03.781 INFO - Done: [click: 10 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='2-select-item-0']/span[1]]]
-13:37:03.784 INFO - Executing: [find element: By.xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span])
-13:37:03.855 INFO - Done: [find element: By.xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span]
-13:37:03.858 INFO - Executing: [click: 9 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span]])
-13:37:03.889 INFO - Done: [click: 9 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span]]
-13:37:03.892 INFO - Executing: [find element: By.xpath: //*[@id='2-select-item-1']/span[1]])
-13:37:03.906 INFO - Done: [find element: By.xpath: //*[@id='2-select-item-1']/span[1]]
-13:37:03.909 INFO - Executing: [click: 11 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='2-select-item-1']/span[1]]])
-13:37:03.958 INFO - Done: [click: 11 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='2-select-item-1']/span[1]]]
-13:37:03.962 INFO - Executing: [find elements: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]])
-13:37:03.977 INFO - Done: [find elements: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]
-13:37:03.979 INFO - Executing: [is displayed: 12 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]])
-13:37:03.989 INFO - Done: [is displayed: 12 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]]
-13:37:04.497 INFO - Executing: [is displayed: 12 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]])
-13:37:04.508 INFO - Done: [is displayed: 12 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]]
-13:37:04.511 INFO - Executing: [find element: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[2]])
-13:37:04.525 INFO - Done: [find element: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[2]]
-13:37:04.527 INFO - Executing: [click: 13 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[2]]])
-13:37:04.565 INFO - Done: [click: 13 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[2]]]
-13:37:04.568 INFO - Executing: [find elements: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]])
-13:37:04.581 INFO - Done: [find elements: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]
-13:37:04.584 INFO - Executing: [is displayed: 12 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]])
-13:37:04.591 INFO - Done: [is displayed: 12 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]]
-13:37:05.101 INFO - Executing: [is displayed: 12 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]])
-13:37:05.956 WARN - Exception thrown
-org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=43.0.2357.130)
-  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'jmanhart-mbr.f4tech.com', ip: '10.38.64.84', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/pq/b_ys313n5k33zjjx2gtdf0h4lr0fk8/T/.org.chromium.Chromium.cW4kKz}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.130, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2f6564744d41971992226677e5ce5679
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
-	at com.sun.proxy.$Proxy2.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.isDisplayed(EventFiringWebDriver.java:385)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:63)
-	at com.sun.proxy.$Proxy3.isDisplayed(Unknown Source)
-	at org.openqa.selenium.remote.server.handler.GetElementDisplayed.call(GetElementDisplayed.java:31)
-	at org.openqa.selenium.remote.server.handler.GetElementDisplayed.call(GetElementDisplayed.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-13:37:05.963 WARN - Exception: stale element reference: element is not attached to the page document
-  (Session info: chrome=43.0.2357.130)
-  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'jmanhart-mbr.f4tech.com', ip: '10.38.64.84', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/pq/b_ys313n5k33zjjx2gtdf0h4lr0fk8/T/.org.chromium.Chromium.cW4kKz}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.130, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2f6564744d41971992226677e5ce5679
-13:37:06.294 INFO - Executing: [find element: By.xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span])
-13:37:06.302 INFO - Done: [find element: By.xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span]
-13:37:06.305 INFO - Executing: [click: 9 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span]])
-13:37:06.339 INFO - Done: [click: 9 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='content']/div/div[3]/div/table/tbody/tr/td[1]/div/span]]
-13:37:06.341 INFO - Executing: [find element: By.xpath: //*[@id='2-select-item-1']/span[1]])
-13:37:06.350 INFO - Done: [find element: By.xpath: //*[@id='2-select-item-1']/span[1]]
-13:37:06.352 INFO - Executing: [click: 14 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='2-select-item-1']/span[1]]])
-13:37:06.396 INFO - Done: [click: 14 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id='2-select-item-1']/span[1]]]
-13:37:06.400 INFO - Executing: [find elements: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]])
-13:37:06.414 INFO - Done: [find elements: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]
-13:37:06.417 INFO - Executing: [is displayed: 15 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]])
-13:37:06.427 INFO - Done: [is displayed: 15 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]]
-13:37:06.934 INFO - Executing: [is displayed: 15 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]])
-13:37:06.945 INFO - Done: [is displayed: 15 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]]
-13:37:06.948 INFO - Executing: [find element: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]])
-13:37:06.960 INFO - Done: [find element: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]
-13:37:06.963 INFO - Executing: [click: 15 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]])
-13:37:07.084 INFO - Done: [click: 15 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]]
-13:37:07.088 INFO - Executing: [find elements: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]])
-13:37:07.107 INFO - Done: [find elements: By.xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]
-13:37:07.109 INFO - Executing: [is displayed: 15 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]])
-13:37:07.117 INFO - Done: [is displayed: 15 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]]
-13:37:07.624 INFO - Executing: [is displayed: 15 [[ChromeDriver: chrome on MAC (2f6564744d41971992226677e5ce5679)] -> xpath: //*[@id="confirm-modal"]/div/div/div[3]/div/button[1]]])
-13:37:08.089 WARN - Exception thrown
-org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=43.0.2357.130)
-  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'jmanhart-mbr.f4tech.com', ip: '10.38.64.84', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/pq/b_ys313n5k33zjjx2gtdf0h4lr0fk8/T/.org.chromium.Chromium.cW4kKz}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.130, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2f6564744d41971992226677e5ce5679
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
-	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
-	at com.sun.proxy.$Proxy2.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.isDisplayed(EventFiringWebDriver.java:385)
-	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:63)
-	at com.sun.proxy.$Proxy3.isDisplayed(Unknown Source)
-	at org.openqa.selenium.remote.server.handler.GetElementDisplayed.call(GetElementDisplayed.java:31)
-	at org.openqa.selenium.remote.server.handler.GetElementDisplayed.call(GetElementDisplayed.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-13:37:08.093 WARN - Exception: stale element reference: element is not attached to the page document
-  (Session info: chrome=43.0.2357.130)
-  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'jmanhart-mbr.f4tech.com', ip: '10.38.64.84', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/pq/b_ys313n5k33zjjx2gtdf0h4lr0fk8/T/.org.chromium.Chromium.cW4kKz}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.130, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2f6564744d41971992226677e5ce5679
-13:37:15.908 INFO - Executing: [delete session: 34a8a02c-38ef-4fc9-bdc8-d0be31fb8cd5])
-13:37:16.478 INFO - Done: [delete session: 34a8a02c-38ef-4fc9-bdc8-d0be31fb8cd5]
-13:37:16.499 INFO - Shutting down...
+13:23:15.682 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, launch_url=https://blankslate.testn.f4tech.com, build=${BID}, name=Create Custom Page, browserName=chrome, project=MooseReapers, javascriptEnabled=true, resolution=1280x1024, platform=ANY}]]
+13:23:15.698 INFO - Executing: [maximise window])
+13:23:16.522 INFO - Done: [maximise window]
+13:23:16.529 INFO - Executing: [get: https://blankslate.testn.f4tech.com#/slm/login.op])
+13:23:18.624 INFO - Done: [get: https://blankslate.testn.f4tech.com#/slm/login.op]
+13:23:19.132 INFO - Executing: [take screenshot])
+13:23:19.532 INFO - Done: [take screenshot]
+13:23:19.650 INFO - Executing: [find elements: By.cssSelector: h1.login-header])
+13:23:19.684 INFO - Done: [find elements: By.cssSelector: h1.login-header]
+13:23:19.688 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: h1.login-header]])
+13:23:19.703 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: h1.login-header]]
+13:23:19.709 INFO - Executing: [find element: By.cssSelector: h1.login-header])
+13:23:19.722 INFO - Done: [find element: By.cssSelector: h1.login-header]
+13:23:19.725 INFO - Executing: [get text: 0 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: h1.login-header]])
+13:23:19.742 INFO - Done: [get text: 0 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: h1.login-header]]
+13:23:19.745 INFO - Executing: [find element: By.cssSelector: #j_username])
+13:23:19.760 INFO - Done: [find element: By.cssSelector: #j_username]
+13:23:19.764 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: #j_username], [j, m, a, n, h, a, r, t, @, r, a, l, l, y, d, e, v, ., c, o, m]])
+13:23:19.821 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: #j_username], [j, m, a, n, h, a, r, t, @, r, a, l, l, y, d, e, v, ., c, o, m]]
+13:23:19.826 INFO - Executing: [find element: By.cssSelector: #j_password])
+13:23:19.852 INFO - Done: [find element: By.cssSelector: #j_password]
+13:23:19.855 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: #j_password], [P, a, s, s, w, o, r, d]])
+13:23:19.890 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: #j_password], [P, a, s, s, w, o, r, d]]
+13:23:19.894 INFO - Executing: [find element: By.cssSelector: #login-button])
+13:23:19.907 INFO - Done: [find element: By.cssSelector: #login-button]
+13:23:19.910 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: #login-button]])
+13:23:19.945 INFO - Done: [click: 3 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: #login-button]]
+13:23:19.951 INFO - Executing: [find elements: By.cssSelector: div[class='header-logo']])
+13:23:22.717 INFO - Done: [find elements: By.cssSelector: div[class='header-logo']]
+13:23:23.226 INFO - Executing: [find elements: By.cssSelector: div[class='header-logo']])
+13:23:23.432 INFO - Done: [find elements: By.cssSelector: div[class='header-logo']]
+13:23:23.436 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: div[class='header-logo']]])
+13:23:23.475 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: div[class='header-logo']]]
+13:23:23.480 INFO - Executing: [find elements: By.cssSelector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']])
+13:23:23.527 INFO - Done: [find elements: By.cssSelector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']]
+13:23:24.033 INFO - Executing: [find elements: By.cssSelector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']])
+13:23:24.062 INFO - Done: [find elements: By.cssSelector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']]
+13:23:24.065 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']]])
+13:23:24.080 INFO - Done: [is displayed: 5 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']]]
+13:23:24.084 INFO - Executing: [find element: By.cssSelector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']])
+13:23:24.102 INFO - Done: [find element: By.cssSelector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']]
+13:23:24.105 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']]])
+13:23:24.122 INFO - Done: [get text: 5 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> css selector: span[data-reactid='.2.0.0.0.$header-item-0:0.0.0']]]
+13:23:24.126 INFO - Executing: [find element: By.xpath: //*[@id="header"]/div[1]/ul/li[1]/a])
+13:23:24.141 INFO - Done: [find element: By.xpath: //*[@id="header"]/div[1]/ul/li[1]/a]
+13:23:24.143 INFO - Executing: [click: 6 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@id="header"]/div[1]/ul/li[1]/a]])
+13:23:24.172 INFO - Done: [click: 6 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@id="header"]/div[1]/ul/li[1]/a]]
+13:23:24.175 INFO - Executing: [find elements: By.xpath: //*[@class ="x4-component button icon-add x4-component-default x4-border-box"]])
+13:23:24.233 INFO - Done: [find elements: By.xpath: //*[@class ="x4-component button icon-add x4-component-default x4-border-box"]]
+13:23:24.236 INFO - Executing: [is displayed: 7 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@class ="x4-component button icon-add x4-component-default x4-border-box"]]])
+13:23:24.248 INFO - Done: [is displayed: 7 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@class ="x4-component button icon-add x4-component-default x4-border-box"]]]
+13:23:24.251 INFO - Executing: [find element: By.xpath: //*[@class ="x4-component button icon-add x4-component-default x4-border-box"]])
+13:23:24.265 INFO - Done: [find element: By.xpath: //*[@class ="x4-component button icon-add x4-component-default x4-border-box"]]
+13:23:24.269 INFO - Executing: [click: 7 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@class ="x4-component button icon-add x4-component-default x4-border-box"]]])
+13:23:24.330 INFO - Done: [click: 7 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@class ="x4-component button icon-add x4-component-default x4-border-box"]]]
+13:23:26.836 INFO - Executing: [get window handles])
+13:23:26.840 INFO - Done: [get window handles]
+13:23:26.843 INFO - Executing: [switch to window: CDwindow-E6D2B866-E566-4809-965F-6B303B79AFBE])
+13:23:26.847 INFO - Done: [switch to window: CDwindow-E6D2B866-E566-4809-965F-6B303B79AFBE]
+13:23:26.850 INFO - Executing: [find elements: By.xpath: /html/body/form/div[1]/h1])
+13:23:26.901 INFO - Done: [find elements: By.xpath: /html/body/form/div[1]/h1]
+13:23:26.904 INFO - Executing: [is displayed: 8 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: /html/body/form/div[1]/h1]])
+13:23:26.917 INFO - Done: [is displayed: 8 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: /html/body/form/div[1]/h1]]
+13:23:26.920 INFO - Executing: [find element: By.xpath: //*[@id="cancel_btn"]])
+13:23:26.934 INFO - Done: [find element: By.xpath: //*[@id="cancel_btn"]]
+13:23:26.936 INFO - Executing: [get text: 9 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@id="cancel_btn"]]])
+13:23:26.952 INFO - Done: [get text: 9 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@id="cancel_btn"]]]
+13:23:26.955 INFO - Executing: [find element: By.xpath: //*[@id="name"]])
+13:23:26.969 INFO - Done: [find element: By.xpath: //*[@id="name"]]
+13:23:26.973 INFO - Executing: [send keys: 10 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@id="name"]], [N, i, g, h, t, w, a, t, c, h,  , N, a, m, e]])
+13:23:27.016 INFO - Done: [send keys: 10 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@id="name"]], [N, i, g, h, t, w, a, t, c, h,  , N, a, m, e]]
+13:23:27.021 INFO - Executing: [find element: By.xpath: /html/body/form/div[2]/div/table/tbody/tr[2]/td/input])
+13:23:27.049 INFO - Done: [find element: By.xpath: /html/body/form/div[2]/div/table/tbody/tr[2]/td/input]
+13:23:27.051 INFO - Executing: [click: 11 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: /html/body/form/div[2]/div/table/tbody/tr[2]/td/input]])
+13:23:27.228 INFO - Done: [click: 11 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: /html/body/form/div[2]/div/table/tbody/tr[2]/td/input]]
+13:23:29.736 INFO - Executing: [find element: By.xpath: //*[@id="cancel_btn"]])
+13:23:29.750 INFO - Done: [find element: By.xpath: //*[@id="cancel_btn"]]
+13:23:29.752 INFO - Executing: [click: 9 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@id="cancel_btn"]]])
+13:23:29.781 INFO - Done: [click: 9 [[ChromeDriver: chrome on MAC (129714c3ab3a67c680c46640d28ad529)] -> xpath: //*[@id="cancel_btn"]]]
+13:23:29.783 INFO - Executing: [delete session: 1f99881a-f473-4c31-8940-3d5c6fd77e91])
+13:23:30.357 INFO - Done: [delete session: 1f99881a-f473-4c31-8940-3d5c6fd77e91]
+13:23:30.381 INFO - Shutting down...

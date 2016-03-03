@@ -1,3 +1,4 @@
+
 exports.command = function(username, password, callback) {
   var client = this;
 //  console.log(client);

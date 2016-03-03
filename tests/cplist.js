@@ -1,4 +1,4 @@
-var PROGRAM_STATUS = {
+var CAPACITY_LIST = {
 	'ENGINEERINGROOT': "#/23112780161ud/dashboard",
 	'SHORT_PAUSE': 2500,
 	'MEDIUM_PAUSE': 7500,
@@ -9,12 +9,15 @@ var PROGRAM_STATUS = {
 
   //Navigate to Capacity Planning List page through tabs
   'CPHASH' : "#/23112780161ud/capacityplanning",
-  'CAPACITYPLANOPTION' : "//*[@id='x4-gen3114']",
+  'CAPACITYPLANOPTION' : "//tr/td/ul/li[3]/a",
+
   'PORTFOLIOTAB' : "/html/body/div[2]/div/div[1]/div/div[1]/ul/li[5]/a",
   //Locator Verifications
   'cpHeader' : "//*[@id='content']/div/div[1]/div[1]/div/div/h1/span[1]",
 
-  'createNewFlair' : "//*[@id='x4-gen5171']",
+  'createNewFlair' : "//*[@class='formatted-id-template']",
+  'flairBody' : "//*[@class='rui-notification-body']/div[2]",
+
 
   //Capacity Plan List Page Locators
   'newPlanName' : "//*[@id='content']/div/div[2]/div/div/input",
@@ -28,13 +31,70 @@ var PROGRAM_STATUS = {
   'helpIcon' : "//*[@id='content']/div/div[1]/div[2]/div/div[2]/button/span/span",
   'deleteModalConfirm' : '//*[@id="confirm-modal"]/div/div/div[3]/div/button[1]',
   'deleteModalCancel' : '//*[@id="confirm-modal"]/div/div/div[3]/div/button[2]',
+  'planTable' : '//*[@id="content"]/div/div[3]/div/table/tbody',
 
 
 };
 
+var PLAN_TABLE = {
+  'PlanID' : "",
+  'PlanName' : "",
+  'Status' : "",
+  'StartRelease' : "",
+  'EndRelease' : "",
+  'LastUpdated' : "",
+  'Groups' : "",
+};
+
+var tablePlan = [[],[],[],[],[],[],[]];
+
 function clickWait(locator, verification, waitTime, browser){
 browser.click(locator).waitForElementVisible(verification, waitTime, '[Cpl] Clicked ' + verification + ' successful');
-}
+};
+
+// function tablePlanArrayGetPlanID(browser){
+//   for(i = 1; i < 5; i++) {
+//     console.log("Jeffs Loop" + i);
+//     if(browser.isVisible('//tbody/tr[' + i + ']/td[2]/a') == true) {
+//       browser.getText('//tbody/tr[' + i + ']/td[2]/a', function(result){
+//         tablePlan[[i],[0],[0],[0],[0],[0],[0]] = result.value;
+//         console.log(result.value);
+//         console.log(tablePlan[[i],[0],[0],[0],[0],[0],[0]]);
+//         });
+//       }else {
+//         console.log("else" + i);
+//       }
+//   }
+// };
+
+
+// function getPlanTableText(browser){
+//   for(i = 0; i < 7; i++) {
+//
+//     if(browser.isVisible('//tbody/tr[1]/td[' + i + ']/a') == true) {
+//       browser.getText('//tbody/tr[1]/td[' + i + ']/a', function(result){
+//         PLAN_TABLE.PlanID = result.value;
+//         console.log(result.value);
+//         console.log(PLAN_TABLE.PlanID);
+//       });
+//     }else if (browser.isVisible('//tbody/tr[1]/td[' + i + ']/span') == true) {
+//       browser.getText('//tbody/tr[1]/td[' + i + ']/span', function(result){
+//         PLAN_TABLE.Status = result.value;
+//         console.log(result.value);
+//         console.log(PLAN_TABLE.Status);
+//       });
+//     }else {
+//       browser.getText('//tbody/tr[1]/td[' + i + ']', function(result){
+//         PLAN_TABLE.PlanName = result.value;
+//         console.log(result.value);
+//         console.log(PLAN_TABLE.PlanName);
+//       });
+//     }
+//   }
+//   console.log(PLAN_TABLE.PlanID);
+//   console.log(PLAN_TABLE.Status);
+//   console.log(PLAN_TABLE.PlanName + 'Jeff');
+// };
 
 
 
@@ -44,10 +104,10 @@ module.exports = {
 		//client = browser;
 		data = browser.globals;
 		//short, medium, long, xl
-		PROGRAM_STATUS.SHORT_PAUSE = PROGRAM_STATUS.SHORT_PAUSE - data.undelay;
-		PROGRAM_STATUS.MEDIUM_PAUSE = PROGRAM_STATUS.MEDIUM_PAUSE - data.undelay;
-		PROGRAM_STATUS.LONG_PAUSE = PROGRAM_STATUS.LONG_PAUSE - data.undelay;
-		PROGRAM_STATUS.XL_PAUSE = PROGRAM_STATUS.XL_PAUSE - data.undelay;
+		CAPACITY_LIST.SHORT_PAUSE = CAPACITY_LIST.SHORT_PAUSE - data.undelay;
+		CAPACITY_LIST.MEDIUM_PAUSE = CAPACITY_LIST.MEDIUM_PAUSE - data.undelay;
+		CAPACITY_LIST.LONG_PAUSE = CAPACITY_LIST.LONG_PAUSE - data.undelay;
+		CAPACITY_LIST.XL_PAUSE = CAPACITY_LIST.XL_PAUSE - data.undelay;
 
 		var shotRoot = 'logs/s' + process.env.__NIGHTWATCH_ENV_KEY + 's';
 
@@ -56,48 +116,72 @@ module.exports = {
 		browser
     .maximizeWindow()
 		.login(data.myUsername, data.myPassword)
-    .useXpath()
+    .useXpath();
     //Navigate to the Capacity Planning Page and check that it is on correct page
-    .urlHash(PROGRAM_STATUS.CPHASH)
-    // clickWait(PROGRAM_STATUS.PORTFOLIOTAB,PROGRAM_STATUS.CAPACITYPLANOPTION, PROGRAM_STATUS.MEDIUM_PAUSE, browser);
-    // browser.click(PROGRAM_STATUS.PORTFOLIOTAB)
-    // .click(PROGRAM_STATUS.CAPACITYPLANOPTION)
+    clickWait(CAPACITY_LIST.PORTFOLIOTAB,CAPACITY_LIST.CAPACITYPLANOPTION, CAPACITY_LIST.MEDIUM_PAUSE, browser);
+    browser
+    .click(CAPACITY_LIST.CAPACITYPLANOPTION)
+		.waitForElementVisible(CAPACITY_LIST.cpHeader, CAPACITY_LIST.MEDIUM_PAUSE, '[Cpl] Navigate to CapacityPlanningList successful')
+    .assert.containsText(CAPACITY_LIST.cpHeader, 'Capacity Planning', '[Cpl] Title is exactly Capacity Planning')
+    .getPlanTable(tablePlan);
+    //getPlanTableText(browser);
+    //tablePlanArrayGetPlanID(browser);
 
-		.waitForElementVisible(PROGRAM_STATUS.cpHeader, PROGRAM_STATUS.MEDIUM_PAUSE, '[Cpl] Navigate to CapacityPlanningList successful')
-    .assert.containsText(PROGRAM_STATUS.cpHeader, 'Capacity Planning', '[Cpl] Title is exactly Capacity Planning')
 
     //check add button is disabled with no text in the text box.  Then it becomes active when text is present then creates new plan with button and using the enter key press
     //Had to change to CSS to use attributeEquals assert
+    browser
     .useCss()
-    .assert.attributeEquals(PROGRAM_STATUS.addNewButtonCss, 'disabled', 'true',"Add New button is not available with no text present - Success")
+    .assert.attributeEquals(CAPACITY_LIST.addNewButtonCss, 'disabled', 'true',"Add New button is not available with no text present - Success")
     .useXpath()
-    .setValue(PROGRAM_STATUS.newPlanName, 'Test Plan 1')
+    .setValue(CAPACITY_LIST.newPlanName, 'Test Plan 1')
     .useCss()
-    .assert.attributeEquals(PROGRAM_STATUS.addNewButtonCss, 'class', 'smb-Button smb-Button--primary smb-Button--xs u-inlineItem',"Add New button is available with text present - Success")
+    .assert.attributeEquals(CAPACITY_LIST.addNewButtonCss, 'class', 'smb-Button smb-Button--primary smb-Button--xs u-inlineItem',"Add New button is available with text present - Success")
     .useXpath()
-    .click(PROGRAM_STATUS.addNewButton)
-    .setValue(PROGRAM_STATUS.newPlanName, ['nightwatch' , browser.Keys.ENTER]);
-    //.assert.containsText(PROGRAM_STATUS.newPlanName, 'has been added.', '[Cpl] Plan has been created')
+    .click(CAPACITY_LIST.addNewButton)
+    .setValue(CAPACITY_LIST.newPlanName, ['nightwatch' , browser.Keys.ENTER])
+    //Can only check if the flair is given and not text in flair at this point in time...need more research on validating flair text
+    .waitForElementVisible(CAPACITY_LIST.flairBody,CAPACITY_LIST.MEDIUM_PAUSE,'[Cpl] Create New Flair received');
 
     //Click Gear icon on first plan in list and select copy
     browser
-    .click(PROGRAM_STATUS.gearIcon)
-    .click(PROGRAM_STATUS.copyAction)
-    //need flair verification
-    //Click Gear icon on first plan in list and select delete
-    .click(PROGRAM_STATUS.gearIcon)
-    .click(PROGRAM_STATUS.deleteAction)
-    .waitForElementVisible(PROGRAM_STATUS.deleteModalConfirm, PROGRAM_STATUS.MEDIUM_PAUSE, '[Cpl] Received Delete Action modal successful')
-    .click(PROGRAM_STATUS.deleteModalCancel)
-    .waitForElementNotVisible(PROGRAM_STATUS.deleteModalConfirm, PROGRAM_STATUS.MEDIUM_PAUSE, '[Cpl] Delete Action modal Cancel successful')
+    .useXpath()
+    .click(CAPACITY_LIST.gearIcon)
+    .click(CAPACITY_LIST.copyAction)
+    .waitForElementVisible(CAPACITY_LIST.flairBody,CAPACITY_LIST.MEDIUM_PAUSE,'[Cpl] Flair received after Copy')
+    //need flair verification and click add details action from flair into plan
 
-    .click(PROGRAM_STATUS.gearIcon)
-    .click(PROGRAM_STATUS.deleteAction)
-    .waitForElementVisible(PROGRAM_STATUS.deleteModalConfirm, PROGRAM_STATUS.MEDIUM_PAUSE, '[Cpl] Received Delete Action modal successful')
-    .click(PROGRAM_STATUS.deleteModalConfirm)
-    .waitForElementNotVisible(PROGRAM_STATUS.deleteModalConfirm, PROGRAM_STATUS.MEDIUM_PAUSE, '[Cpl] Delete Action modal Confirm successful')
+    //Click Gear icon on first plan in list and select delete...get modal and cancel then confirm
+    .click(CAPACITY_LIST.gearIcon)
+    .click(CAPACITY_LIST.deleteAction)
+    .waitForElementVisible(CAPACITY_LIST.deleteModalConfirm, CAPACITY_LIST.MEDIUM_PAUSE, '[Cpl] Received Delete Action modal successful')
+    .click(CAPACITY_LIST.deleteModalCancel)
+    .waitForElementNotVisible(CAPACITY_LIST.deleteModalConfirm, CAPACITY_LIST.MEDIUM_PAUSE, '[Cpl] Delete Action modal Cancel successful')
 
-    .pause(PROGRAM_STATUS.MEDIUM_PAUSE)
+    .click(CAPACITY_LIST.gearIcon)
+    .click(CAPACITY_LIST.deleteAction)
+    .waitForElementVisible(CAPACITY_LIST.deleteModalConfirm, CAPACITY_LIST.MEDIUM_PAUSE, '[Cpl] Received Delete Action modal successful')
+    .click(CAPACITY_LIST.deleteModalConfirm)
+    .waitForElementNotVisible(CAPACITY_LIST.deleteModalConfirm, CAPACITY_LIST.MEDIUM_PAUSE, '[Cpl] Delete Action modal Confirm successful')
+    .waitForElementVisible(CAPACITY_LIST.flairBody,CAPACITY_LIST.MEDIUM_PAUSE,'[Cpl] Flair received after delete action')
+
+
+
+    //get plan table data and validate
+
+    //click plan ID
+
+    .pause(CAPACITY_LIST.MEDIUM_PAUSE)
 	  .end();
+
+
+    //click help icon and close help tab
+    // .click(CAPACITY_LIST.helpIcon)
+    // .pause(CAPACITY_LIST.MEDIUM_PAUSE)
+    // .moveTo(CAPACITY_LIST.helpIcon)
+    // .mouseButtonClick('right')
+    // .assert.urlEquals("https://help.rallydev.com/capacity-planning", '[Cpl] Navigated to Help Tab successfully')
+    // .closeWindow()
+
 	}
 };
