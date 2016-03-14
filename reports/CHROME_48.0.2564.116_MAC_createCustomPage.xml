@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="createCustomPage"
+    errors="0" failures="1" hostname="" id="" package="createCustomPage" skipped="0"
+    tests="1" time="32.40" timestamp="Thu, 03 Mar 2016 17:52:46 GMT">
+  
+    <testcase name="Create Custom Page" time="32.40" assertions="11">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="[Dash] Clicked COGICON successful">[Dash] Clicked COGICON successful: Expected &quot;visible&quot; but got: &quot;not found&quot;
+    at F.WaitForElement.fail (/Users/jmanhart/node_modules/nightwatch/lib/api/commands/_waitForElement.js:194:15)
+    at F.WaitForElementPresent.elementNotFound (/Users/jmanhart/node_modules/nightwatch/lib/api/commands/waitForElementPresent.js:57:15)
+    at Object.&lt;anonymous&gt; (/Users/jmanhart/node_modules/nightwatch/lib/api/commands/_waitForElement.js:221:17)
+    at HttpRequest.&lt;anonymous&gt; (/Users/jmanhart/node_modules/nightwatch/lib/index.js:299:20)
+    at HttpRequest.emit (events.js:110:17)
+    at HttpRequest.&lt;anonymous&gt; (/Users/jmanhart/node_modules/nightwatch/lib/index.js:322:15)
+    at HttpRequest.emit (events.js:118:17)
+    at IncomingMessage.&lt;anonymous&gt; (/Users/jmanhart/node_modules/nightwatch/lib/http/request.js:148:16)
+    at IncomingMessage.emit (events.js:129:20)
+    at _stream_readable.js:908:16</failure>
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

@@ -25,10 +25,11 @@ module.exports = {
     .click(DASHBOARD.SHARECHECKBOX)
     .pause(DASHBOARD.SHORT_PAUSE)
     .click(DASHBOARD.CANCELBUTTON)
+		.click(DASHBOARD.DONTSAVEBUTTON)
 
     .switchWindowFocus(1, 0, browser)
-		.clickWait(DASHBOARD.COGICON, DASHBOARD.COPYACTION, DASHBOARD.MEDIUM_PAUSE,"COGICON", browser);
-		.clickWait(DASHBOARD.COPYACTION,DASHBOARD.HEADER,DASHBOARD.MEDIUM_PAUSE,"COPYACTION", browser);
+		.clickWait(DASHBOARD.COGICON, DASHBOARD.COPYACTION, DASHBOARD.MEDIUM_PAUSE,"COGICON", browser)
+		.clickWait(DASHBOARD.COPYACTION,DASHBOARD.HEADER,DASHBOARD.MEDIUM_PAUSE,"COPYACTION", browser)
     //
 		// //click help icon and close help tab
     // browser
@@ -55,9 +56,9 @@ var DASHBOARD = {
 
 	//Dashboard locators
 	'TEMPIMAGE' : '//*[@id="content"]/div/img',
-	'COGICON' : '//*[@id="content"]/div/div/div[2]/div/div[1]/div/button/span/span',
+	'COGICON' : '//*[@id="content"]/div/div[1]/div[2]/div/div[1]/div/button/span/span',
 	'EDITACTION' : '//*[@data-reactid=".1.0.1.0.$header-item-0:0.0.1.$1-select-item-0.1"]',
-	'COPYACTION' : '//*[@data-reactid=".1.0.1.0.$header-item-0:0.0.1.$1-select-item-1.1"]',
+	'COPYACTION' : '//*[@data-reactid=".4.0.1.0.$header-item-0:0.0.1.1.$4-select-item-3.1"]',
 	'HELPICON' : '//*[@id="content"]/div/div/div[2]/div/div[2]/button/span/span',
   'HOMETAB' : '//*[@id="header"]/div[1]/ul/li[1]/a',
   'ADDCUSTOMPAGE' : '//*[@class ="x4-component button icon-add x4-component-default x4-border-box"]',
@@ -66,6 +67,10 @@ var DASHBOARD = {
   'POPUPHEADER' : '/html/body/form/div[1]/h1',
   'NAMEENTRY' : '//*[@id="name"]',
   'CANCELBUTTON' : '//*[@id="cancel_btn"]',
-  'SHARECHECKBOX' : '/html/body/form/div[2]/div/table/tbody/tr[2]/td/input'
+  'SHARECHECKBOX' : '/html/body/form/div[2]/div/table/tbody/tr[2]/td/input',
+
+	//confirmation modal locators
+	'SAVEBUTTON' : '//*[@id="rallybutton-1026-btnIconEl"]',
+	'DONTSAVEBUTTON' : '//*[@id="rallybutton-1027-btnIconEl"]',
 
 };

@@ -8,7 +8,7 @@ exports.command = function(username, password, callback) {
 
     .saveScreenshot(shotRoot + 'loginpage.png')
     .waitForElementVisible('h1.login-header', 5000, '[Login] Find h1.login-header ( %d ms)')
-    .assert.containsText('h1.login-header', 'Sign in to Rally', '[Login] "Sign in to Rally" text is visible.')
+    .assert.containsText('h1.login-header', 'Sign in', '[Login] "Sign in to Rally" text is visible.')
     .setValue("#j_username", username)
     .setValue("#j_password", password)
     .click("#login-button")
